@@ -59,7 +59,7 @@ export default function CalculatorComponent() {
 
   // JSX return statement rendering the calculator UI
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gray-100 dark:bg-gray-900">
+    <div className="flex flex-col items-center justify-center h-screen">
       {/* Center the calculator within the screen */}
       <Card className="w-full max-w-md p-6 bg-white dark:bg-gray-800 shadow-lg rounded-lg">
         {/* Card header with title */}
@@ -72,9 +72,10 @@ export default function CalculatorComponent() {
         <CardContent className="space-y-4">
           {/* Input fields for numbers */}
           <div className="grid grid-cols-2 gap-4">
-            <div className="flex flex-col space-y-2">
+            <div className="flex flex-col space-y-2 ">
               <Label htmlFor="num1">Number 1</Label>
               <Input
+                className=""
                 id="num1"
                 type="number"
                 value={num1}

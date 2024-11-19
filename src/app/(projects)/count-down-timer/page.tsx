@@ -104,7 +104,7 @@ export default function Countdown() {
   // JSX return statement rendering the Countdown UI
   return (
     // Container div for centering the content
-    <div className="flex flex-col items-center justify-center h-screen bg-gray-100 dark:bg-gray-900">
+    <div className="flex flex-col items-center justify-center h-screen">
       {/* Timer box container */}
       <div className="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-8 w-full max-w-md">
         {/* Title of the countdown timer */}

@@ -19,7 +19,7 @@ export default function RootLayout({
         <div>
         <SideBar />
         </div>
-        <div>
+        <div className="mx-auto">
         {children}
         </div>
       

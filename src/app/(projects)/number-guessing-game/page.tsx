@@ -6,14 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
 const NumberGuessingGame = () => {
-    interface NumberGuessingState {
-        gameStarted: boolean;
-        gameOver: boolean;
-        paused: boolean;
-        targetNumber: number;
-        userGuess: number | string;
-        attempts: number;
-      }
+    // 
 
 const [gameStarted, setGameStarted] = useState<boolean>(false);
 const [gameOver, setGameOver] = useState<boolean>(false);
@@ -68,7 +61,7 @@ useEffect(() => {
 
 
   return (
-  <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-br from-gray-800 to-black">
+  <div className="flex flex-col items-center justify-center h-screen">
     <div className="bg-white rounded-lg shadow-lg p-8 w-full max-w-md">
       <h1 className="text-3xl font-bold text-center mb-2 text-black">
         Number Guessing Game
