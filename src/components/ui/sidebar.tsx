@@ -2,10 +2,8 @@
 
 import React, { useState } from 'react';
 import {
-  AppstoreOutlined,
   ContainerOutlined,
   DesktopOutlined,
-  MailOutlined,
   MenuFoldOutlined,
   MenuUnfoldOutlined,
   PieChartOutlined,
@@ -20,6 +18,7 @@ const items: MenuItem[] = [
   { key: '2', icon: <DesktopOutlined />, label: 'Bitrhday Wish App' },
   { key: '3', icon: <ContainerOutlined />, label: 'Weather App' },
   { key: '4', icon:<ContainerOutlined /> , label: 'Number Guessing Game' },
+  { key: '5', icon:<ContainerOutlined /> , label: 'Simple Calculator' },
   
 
 ];
@@ -33,17 +32,20 @@ const SideBar: React.FC = () => {
 
   return (
     <div style={{ width: 256 }}>
-      <Button type="primary" onClick={toggleCollapsed} style={{ marginBottom: 16 }}>
-        {collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
-      </Button>
-      <Menu
+     
+      {collapsed ? "" :
+ <Menu
         defaultSelectedKeys={['1']}
         defaultOpenKeys={['sub1']}
         mode="inline"
-        theme="dark"
+        theme="light"
         inlineCollapsed={collapsed}
         items={items}
+        style={{width:"15rem" ,height:"30rem",zIndex:"50"}}
       />
+
+      }
+     
     </div>
   );
 };
