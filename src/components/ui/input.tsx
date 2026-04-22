@@ -2,7 +2,8 @@ import * as React from "react"
 
 import { cn } from "@/lib/utils"
 
-export type InputProps = React.InputHTMLAttributes<HTMLInputElement>
+export interface InputProps
+  extends React.InputHTMLAttributes<HTMLInputElement> {}
 
 const Input = React.forwardRef<HTMLInputElement, InputProps>(
   ({ className, type, ...props }, ref) => {
@@ -22,8 +23,8 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
 Input.displayName = "Input"
 
 export { Input }
-//           { key: '1', icon: <PieChartOutlined />, label: 'Count Down Timer' },
-//             { key: '2', icon: <DesktopOutlined />, label: 'Bitrhday Wish App' },
-//             { key: '3', icon: <ContainerOutlined />, label: 'Weather App' },
-//             { key: '4', icon: <ContainerOutlined />, label: 'Number Guessing Game' },
-//             { key: '5', icon: <ContainerOutlined />, label: 'Simple Calculator' }
+// { key: '1', icon: <PieChartOutlined />, label: 'Count Down Timer' },
+//   { key: '2', icon: <DesktopOutlined />, label: 'Bitrhday Wish App' },
+//   { key: '3', icon: <ContainerOutlined />, label: 'Weather App' },
+//   { key: '4', icon: , label: 'Number Guessing Game' },
+//   { key: '5', icon: , label: 'Simple Calculator' },
